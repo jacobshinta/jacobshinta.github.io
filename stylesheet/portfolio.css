@@ -22,7 +22,7 @@ body.fade-out {
 /* Heading 1 elements */
 h1 {
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto Slab", serif;
     text-align: center;
     margin-top: 2%;
     color: #1a1a1a; 
@@ -39,12 +39,13 @@ h1:hover {
 .white-text {
     color: #fff;
     padding-top: 10vh;
+    font-family: "Roboto Slab", serif;
 }
 
 /* Paragraph elements */
 p {
     font-family:'Open Sans', sans-serif;
-    text-align: justify; 
+    text-align: center; 
     letter-spacing: .1vw;
     font-size: 1vw;
     padding-left: 1vw;
@@ -156,16 +157,22 @@ footer {
 
 /* Navbar hover effects */
 .Navbar a:hover {
-    background-color: #f4f4f4;
+    background-color: #c2c2c2;
     color: black;
     font-weight: bold;
     cursor: pointer;
 }
 
+/* Navbar on click effects */
+.Navbar a:active, .Navbar a.selected:active {
+    background-color: #f4f4f4;
+}
+
 /* Navbar home button */
-.Navbar a.active {
+.Navbar a.selected {
     background-color: darkgray;
 }
+
 /***** END OF NAVBAR STYLING *****/
 
 
@@ -345,6 +352,19 @@ footer {
 	display: table;
 	clear: both;
 }
+
+/* Github and Resume button styling */
+.P_Button {
+    position: relative;
+    width: 20vw;
+    background-color: white;
+    color: black;
+    border: solid black;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 1vw;  
+    padding-right: 1vw;
+}
 /***** END OF TABLE STYLING *****/
 
 
@@ -446,4 +466,13 @@ button:hover, .form-container .btn:hover {
     -webkit-transition-duration: 1s;
     border-color: black;
 }
+
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 /***** End of Contact Form Styling *****/
