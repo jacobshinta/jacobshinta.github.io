@@ -324,6 +324,7 @@ footer {
     padding: 1.6%;
     height: 400px;
     background-color: #f2f2f2;
+    position: relative;
 }
 
 @media screen and (max-width: 576px) {
@@ -338,6 +339,13 @@ footer {
     padding: 1.6%;
     height: 400px;
     background-color: #4d4d4d;
+}
+
+.Column_center {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Final Row Adjustments */
@@ -466,13 +474,4 @@ button:hover, .form-container .btn:hover {
     -webkit-transition-duration: 1s;
     border-color: black;
 }
-
-
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
 /***** End of Contact Form Styling *****/
