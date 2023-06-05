@@ -36,3 +36,17 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+// Highlights navigation tabs when selected
+const tabs = document.querySelectorAll('a');
+    
+if (tabs.length) {
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', (e) => {
+      tabs.forEach((tab) => {
+          tab.classList.remove('selected');
+      });
+      tab.classList.add('selected');
+    });
+  });
+}
