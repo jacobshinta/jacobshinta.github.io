@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jacob Long - Resume</title>
+<!--
+  Source for public/resume.pdf. Edit the text here, then run:
+    node scripts/resume.mjs
+  One page, single column, real text (no images or tables), so applicant tracking systems can read it.
+-->
+<style>
+  @font-face {
+    font-family: "Bricolage";
+    src: url("../node_modules/@fontsource/bricolage-grotesque/files/bricolage-grotesque-latin-700-normal.woff") format("woff");
+    font-weight: 700;
+  }
+  @page { size: Letter; margin: 0.45in 0.55in; }
+  :root { --ink: #1b1a18; --muted: #5a554e; --rule: #d9d4cc; --accent: #3f7d1e; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    font: 9.7pt/1.34 "Segoe UI", Arial, sans-serif;
+  }
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; }
+  h1 { font-family: "Bricolage", "Segoe UI", sans-serif; font-size: 25pt; line-height: 1; margin: 0; letter-spacing: -0.01em; }
+  .role { margin: 5px 0 0; font-size: 11pt; color: var(--accent); font-weight: 600; }
+  .contact { text-align: right; font-size: 9pt; color: var(--muted); line-height: 1.5; }
+  .contact a { color: var(--muted); text-decoration: none; }
+  h2 {
+    font-size: 9pt; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent);
+    margin: 11px 0 5px; padding-bottom: 3px; border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0; }
+  .summary { margin-top: 12px; }
+  .item { margin-top: 7px; }
+  .item:first-of-type { margin-top: 0; }
+  .line { display: flex; justify-content: space-between; gap: 12px; }
+  .line b { font-weight: 600; }
+  .meta { color: var(--muted); font-size: 9pt; white-space: nowrap; }
+  .sub { color: var(--muted); }
+  ul { margin: 2px 0 0; padding-left: 15px; }
+  li { margin: 1px 0; }
+  .skills p { margin: 2px 0; }
+  .skills b { font-weight: 600; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Jacob Long</h1>
+    <p class="role">Game Developer · Unity, Godot, C#</p>
+  </div>
+  <div class="contact">
+    Jacksonville, FL · <a href="mailto:jacobshinta@me.com">jacobshinta@me.com</a><br>
+    <a href="https://jacobshinta.github.io">jacobshinta.github.io</a> · <a href="https://github.com/jacobshinta">github.com/jacobshinta</a><br>
+    Open to remote roles or relocating
+  </div>
+</header>
+
+<p class="summary">
+  Game developer who builds complete games solo in Unity and Godot, from gameplay systems and netcode to save
+  systems, automated tests and the tools around them. Currently finishing Birdie Club for release on Steam.
+  Started in C# and ASP.NET through a software development bootcamp and an Agile team internship.
+</p>
+
+<h2>Games and projects</h2>
+
+<div class="item">
+  <div class="line"><p><b>Birdie Club</b> <span class="sub">· online arcade golf, coming to Steam · Unity 6, C#</span></p></div>
+  <ul>
+    <li>Wrote a deterministic ball simulator with drag, Magnus lift and a friction bounce model, and an editor tool that tunes it against real launch-monitor data.</li>
+    <li>Built Steam lobbies with join codes for up to four players, procedurally routed courses, and NUnit tests for the physics and network messages.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="line"><p><b>Ghost Notes</b> <span class="sub">· survivors-like, playable on the web · Godot 4, GDScript</span></p></div>
+  <ul>
+    <li>Keeps hundreds of enemies on screen with packed arrays, a spatial hash and batched drawing. Each loop records the player's path and replays it as an ally, locked to the music's beat grid.</li>
+    <li>Windows, Linux and browser builds, with about two dozen headless test suites.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="line"><p><b>Vine &amp; Dandy</b> <span class="sub">· first-person farming sim, v0.46 · Unity 6, C#</span></p></div>
+  <ul>
+    <li>Wine blending and aging model, NavMesh worker AI with job classes, and crash-safe versioned save files. Iterated through dozens of builds, several of them playtested by a small group of testers.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="line"><p><b>Punch Card</b> <span class="sub">· league website and Discord bot · Next.js, TypeScript, PostgreSQL</span></p></div>
+  <ul>
+    <li>Full-stack site and scheduled Discord bot to run a 3v3 Street Fighter 6 league, with Swiss pairings, a double-elimination bracket, Discord sign-in and about 200 tests.</li>
+  </ul>
+</div>
+
+<h2>Experience</h2>
+
+<div class="item">
+  <div class="line"><p><b>Independent Game Developer</b> <span class="sub">· Self-employed</span></p><span class="meta">2023 – Present</span></div>
+  <ul>
+    <li>Design, build, test and ship games on my own, from first prototype to release builds. Code samples and playable builds at jacobshinta.github.io.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="line"><p><b>Delivery Driver</b> <span class="sub">· DoorDash, Uber Eats, Roadie (contract, alongside game development)</span></p><span class="meta">2024 – Present</span></div>
+</div>
+
+<div class="item">
+  <div class="line"><p><b>Resolution Coordinator</b> <span class="sub">· Walmart (remote)</span></p><span class="meta">Jul 2023 – Dec 2023</span></div>
+  <ul><li>Resolved customer issues by phone, email and chat, and reviewed accounts for refund eligibility and fraud.</li></ul>
+</div>
+
+<div class="item">
+  <div class="line"><p><b>Software Developer Intern</b> <span class="sub">· Prosper IT Consulting (remote)</span></p><span class="meta">Apr 2021 – May 2021</span></div>
+  <ul><li>Built pages for a theater company's content and production site in C#, ASP.NET MVC and Entity Framework, on an Agile/Scrum team with daily stand-ups and retrospectives.</li></ul>
+</div>
+
+<div class="item">
+  <div class="line"><p><b>Earlier</b> <span class="sub">· Customer support (Amazon, Qualfon), sales (T-ROC, Troll and Toad), OTR truck driver (U.S. Xpress)</span></p><span class="meta">2013 – 2021</span></div>
+</div>
+
+<h2>Skills</h2>
+<div class="skills">
+  <p><b>Engines:</b> Unity 6 (URP, NavMesh, Netcode for GameObjects, UI Toolkit), Godot 4</p>
+  <p><b>Languages:</b> C#, GDScript, TypeScript, JavaScript, SQL, Python, Kotlin</p>
+  <p><b>Game systems:</b> gameplay physics, online multiplayer (Steamworks, ENet, Unity Relay), AI, save systems, shaders</p>
+  <p><b>Web:</b> Next.js, React, ASP.NET MVC, PostgreSQL, Tailwind CSS</p>
+  <p><b>Tools:</b> Git, GitHub, Azure DevOps, NUnit, Visual Studio, VS Code, Android Studio</p>
+</div>
+
+<h2>Training and licenses</h2>
+<div class="item">
+  <div class="line"><p><b>Certification in Software Development</b> <span class="sub">· The Tech Academy · C# and .NET bootcamp ending in a team project</span></p><span class="meta">2021</span></div>
+</div>
+<div class="item">
+  <div class="line"><p><b>Android development with Kotlin</b> <span class="sub">· mentored study · built a live weather app (Android SDK, Glide, Gson)</span></p><span class="meta">2024</span></div>
+</div>
+<div class="item">
+  <div class="line"><p><b>CDL Class A with Hazmat endorsement</b></p></div>
+</div>
+
+</body>
+</html>
